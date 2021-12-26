@@ -1,9 +1,10 @@
-import { h, render } from 'preact'
-import { App } from './components/app'
+import React from 'react'
+import { render } from 'react-dom'
+import { App } from './components'
 
 render(<App />, document.body)
 
 if (process.env.NODE_ENV === 'development') {
-  // eslint-disable-next-line unicorn/prefer-module
-  require('preact/debug')
+  // @ts-expect-error, unnecessary type definition
+  import('preact/debug')
 }

@@ -1,9 +1,9 @@
-import preactPlugin from '@preact/preset-vite'
+import reactPlugin from '@vitejs/plugin-react'
 import { UserConfig } from 'vite'
 
 const config: UserConfig = {
   base: './',
-  plugins: [preactPlugin()]
+  plugins: [reactPlugin()]
 }
 
 export default config
